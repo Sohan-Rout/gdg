@@ -64,58 +64,58 @@ export default function HeroSection() {
               <div className="relative py-6 md:w-[calc(100%-11rem)]">
                 <InfiniteSlider speedOnHover={20} speed={40} gap={112}>
                   <div className="flex">
-                    <img
+                    <Image
                       className="mx-auto h-10 w-fit filter grayscale dark:grayscale-0"
-                      src="./partners/codeCrafters.png"
+                      src="/partners/codeCrafters.png"
                       alt="Code Crafters"
-                      height="64"
-                      width="auto"
+                      height={64}
+                      width={600}
                     />
                   </div>
 
                   <div className="flex">
-                    <img
+                    <Image
                       className="mx-auto h-10 w-fit filter grayscale dark:grayscale-0"
-                      src="./partners/codingNinjas.png"
+                      src="/partners/codingNinjas.png"
                       alt="Coding Ninjas"
-                      height="120"
-                      width="auto"
+                      height={120}
+                      width={600}
                     />
                   </div>
                   <div className="flex">
-                    <img
+                    <Image
                       className="mx-auto h-10 w-fit filter grayscale dark:grayscale-0"
-                      src="./partners/gloskee.png"
+                      src="/partners/gloskee.png"
                       alt="Gloskee"
-                      height="48"
-                      width="auto"
+                      height={48}
+                      width={600}
                     />
                   </div>
                   <div className="flex">
-                    <img
+                    <Image
                       className="mx-auto h-10 w-fit filter grayscale dark:grayscale-0"
-                      src="./partners/smash.png"
+                      src="/partners/smash.png"
                       alt="Smaaash"
-                      height="64"
-                      width="auto"
+                      height={64}
+                      width={600}
                     />
                   </div>
                   <div className="flex">
-                    <img
+                    <Image
                       className="mx-auto h-10 w-fit filter grayscale dark:grayscale-0"
-                      src="./partners/sybgen.png"
+                      src="/partners/sybgen.png"
                       alt="Sybgen"
-                      height="64"
-                      width="auto"
+                      height={64}
+                      width={600}
                     />
                   </div>
                   <div className="flex">
-                    <img
+                    <Image
                       className="mx-auto h-10 w-fit filter grayscale dark:grayscale-0"
-                      src="./partners/unstop.png"
+                      src="/partners/unstop.png"
                       alt="Unstop"
-                      height="48"
-                      width="auto"
+                      height={48}
+                      width={600}
                     />
                   </div>
                 </InfiniteSlider>
