@@ -6,7 +6,7 @@ import React from 'react'
 import { FaXTwitter, FaInstagram, FaWhatsapp, FaLinkedin, FaDiscord } from "react-icons/fa6";
 
 const menuItems = [
-    { name: 'About', href: '#link' },
+    { name: 'About', href: '#about' },
     { name: 'Upcoming Events', href: '#link' },
     { name: 'Past Events', href: '#link' },
     { name: 'Oragnizers', href: '#link' },
