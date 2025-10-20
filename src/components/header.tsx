@@ -2,8 +2,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
-import { Button } from '@/components/ui/button'
 import React from 'react'
+import { FaXTwitter, FaInstagram, FaWhatsapp, FaLinkedin, FaDiscord } from "react-icons/fa6";
 
 const menuItems = [
     { name: 'About', href: '#link' },
@@ -12,13 +12,21 @@ const menuItems = [
     { name: 'Oragnizers', href: '#link' },
 ]
 
+const social = [
+    { name : "x", href : "#", icon: <FaXTwitter /> },
+    { name : "instagram", href : "#", icon: <FaInstagram /> },
+    { name : "whatsapp", href : "#", icon: <FaWhatsapp /> },
+    { name : "linkedin", href : "#", icon: <FaLinkedin /> },
+    { name : "discord", href : "#", icon: <FaDiscord /> },
+]
+
 export const HeroHeader = () => {
     const [menuState, setMenuState] = React.useState(false)
     return (
         <header>
             <nav
                 data-state={menuState && 'active'}
-                className="bg-background/50 fixed z-20 w-full border-b backdrop-blur-3xl">
+                className="bg-background/50 fixed z-20 w-full border-b backdrop-blur-3xl py-2">
                 <div className="mx-auto max-w-6xl px-6 transition-all duration-300">
                     <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
                         <div className="flex w-full items-center justify-between gap-12 lg:w-auto">
@@ -67,14 +75,15 @@ export const HeroHeader = () => {
                                 </ul>
                             </div>
                             <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-                                <Button
-                                    asChild
-                                    variant="outline"
-                                    size="sm">
-                                    <Link href="#">
-                                        <span>Login</span>
-                                    </Link>
-                                </Button>
+                                <ul className='flex gap-2 items-center justify-center bg-black px-4 py-2 rounded-full shadow-xl'>
+                                    {social.map((item, index) => (
+                                        <li key={index}>
+                                            <Link href={item.href}>
+                                                <span className='text-xl text-neutral-200 hover:text-blue-500 duration-300'>{item.icon}</span>
+                                            </Link>
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
                         </div>
                     </div>
