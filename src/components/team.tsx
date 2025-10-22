@@ -23,7 +23,7 @@ const designLead = [
     {
         name: 'Manav Tuli',
         role: 'Graphics',
-        avatar: 'https://avatars.githubusercontent.com/u/47919550?v=4',
+        avatar: './team/manav.jpeg',
     },
     {
         name: 'Bhumika Yadav',
