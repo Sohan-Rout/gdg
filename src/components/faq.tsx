@@ -1,34 +1,32 @@
 'use client'
-
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
-import Link from 'next/link'
 
 export default function FAQsTwo() {
     const faqItems = [
         {
             id: 'item-1',
-            question: 'How long does shipping take?',
-            answer: 'Standard shipping takes 3-5 business days, depending on your location. Express shipping options are available at checkout for 1-2 business day delivery.',
+            question: 'What is GDG (Google Developer Groups)?',
+            answer: 'GDG is a community of developers passionate about technology, learning, and building projects using Google technologies and beyond.',
         },
         {
             id: 'item-2',
-            question: 'What payment methods do you accept?',
-            answer: 'We accept all major credit cards (Visa, Mastercard, American Express), PayPal, Apple Pay, and Google Pay. For enterprise customers, we also offer invoicing options.',
+            question: 'What is the purpose of GDG DCE?',
+            answer: 'Our GDG chapter aims to create a space where students can learn, collaborate, and innovate through workshops, hackathons, study jams, and tech talks.',
         },
         {
             id: 'item-3',
-            question: 'Can I change or cancel my order?',
-            answer: 'You can modify or cancel your order within 1 hour of placing it. After this window, please contact our customer support team who will assist you with any changes.',
+            question: 'Is GDG officially affiliated with Google?',
+            answer: 'Yes, GDG chapters are recognized by Google Developers, though they are independently organized by local communities.',
         },
         {
             id: 'item-4',
-            question: 'Do you ship internationally?',
-            answer: "Yes, we ship to over 50 countries worldwide. International shipping typically takes 7-14 business days. Additional customs fees may apply depending on your country's import regulations.",
+            question: 'How can I participate in GDG events?',
+            answer: "You can check our upcoming events section or follow us on social media for event updates and registration links.",
         },
         {
             id: 'item-5',
-            question: 'What is your return policy?',
-            answer: 'We offer a 30-day return policy for most items. Products must be in original condition with tags attached. Some specialty items may have different return terms, which will be noted on the product page.',
+            question: 'How can I stay updated about upcoming events?',
+            answer: 'Follow our official handles on Instagram, LinkedIn, WhatsApp, and Discord links are provided on the website.',
         },
     ]
 

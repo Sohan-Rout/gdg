@@ -28,7 +28,7 @@ const designLead = [
     {
         name: 'Bhumika Yadav',
         role: 'Public Relations',
-        avatar: 'https://avatars.githubusercontent.com/u/47919550?v=4',
+        avatar: './team/bhumi.jpg',
     },
 ]
 

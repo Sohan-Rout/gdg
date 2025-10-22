@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import WhatsappOverlay from './overlay/whatsapp'
 
 export default function CallToAction() {
     return (
@@ -10,18 +11,8 @@ export default function CallToAction() {
                     <p className="mt-4 text-neutral-400">Be part of something bigger. Attend Our Next Event</p>
 
                     <div className="mt-12 flex flex-wrap justify-center gap-4">
-                        <Button
-                            asChild
-                            size="lg"
-                            variant="outline">
-                            <Link href="/">
-                                <span>Join Us</span>
-                            </Link>
-                        </Button>
-
-                        <Button
-                            asChild
-                            size="lg">
+                        <WhatsappOverlay />
+                        <Button asChild size="lg">
                             <Link href="/">
                                 <span>Events</span>
                             </Link>
